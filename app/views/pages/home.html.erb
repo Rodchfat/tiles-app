@@ -1,6 +1,8 @@
 <div class="jumbotron center">
   <h1>Welcome to Tiles App</h1>
   <p>floating tiles makes great album!</p>
-  <button type="button" class="btn btn-default">Log in</button>
-  <button type="button" class="btn btn-primary">Join</button>
+  <!--<button type="button" class="btn btn-default">Log in</button>-->
+  <%= link_to 'Log in', new_user_session_path, class: "btn btn-default" %>
+  <!--<button type="button" class="btn btn-primary">Join</button>-->
+  <%= link_to 'Sign up', new_user_registration_path, class: "btn btn-primary" %>
 </div>
