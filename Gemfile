@@ -6,6 +6,7 @@ gem 'rails', '4.2.4'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 # Use sqlite3 as the database for Active Record
 gem 'devise'
+gem 'aws-sdk', '~> 2.3', '>= 2.3.4'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
