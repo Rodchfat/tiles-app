@@ -76,4 +76,17 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  
+  # added by devise gem instructions
+  config.action_mailer.default_url_options = { host: 'rod-tiles-app.herokuapp.com' }
+ # added by instructions for AWS 
+  config.paperclip_defaults = {
+  storage: :s3,
+  s3_credentials: {
+    bucket: ENV.fetch('rod-tiles-app'),
+    access_key_id: ENV.fetch('AKIAJWKLX5P5KAOCMPKA'),
+    secret_access_key: ENV.fetch('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'),
+    s3_region: ENV.fetch('US_Standard'),
+  }
+}
 end
