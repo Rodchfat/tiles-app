@@ -84,8 +84,8 @@ Rails.application.configure do
   storage: :s3,
   s3_credentials: {
     bucket: ENV.fetch('rod-tiles-app'),
-    access_key_id: ENV.fetch('AKIAJWKLX5P5KAOCMPKA'),
-    secret_access_key: ENV.fetch('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'),
+    access_key_id: ENV.fetch(''),
+    secret_access_key: ENV.fetch(''),
     s3_region: ENV.fetch('US_Standard'),
   }
 }
